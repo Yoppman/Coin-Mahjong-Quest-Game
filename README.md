@@ -7,7 +7,8 @@
 
 ## Demo
 ![LINK](Demo.gif)
-[LINK](https://imgur.com/a/nxJM0bd)
+
+[Demo Video](https://imgur.com/a/nxJM0bd)
 
 
 ## Environment
