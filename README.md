@@ -1,32 +1,87 @@
 
 # Coin Collect Game using OpenGL
 
- This is a 2D coin collect game using OpenGL specification and building with GLFW3, SOIL, Freetype2.
- 
-
+Coin Collect Game is a 3D game developed using C++ and OpenGL. The game features intuitive controls, simple mechanics, and fun graphics created using OpenGL.
 
 ## Demo
 ![LINK](Demo.gif)
 
 [Demo Video](https://imgur.com/a/nxJM0bd)
 
-
-## Environment
-
-To run this project, you will need to compile in g++ or clang++ -std=c++17.
-Futhermore, because the pre-compiled dynamic libararies are OS-dependent, it should be ran in the __MAC OS__ in the __Visual Studio Code__.
-
-(Unfortunately, if TAs are not using MAC, then you are not able to use the following command to run this project. However, it is possible to install the Windows/Linux version of GLFW, SOIL Freetype2 to compile the project.)
-
-In the Visual Studio Code, just simply compile with `Command + Shift + B` or in the menu bar `Terminal -> Run Build task`.
-Only by doing so, the arguments in the `.vscode/task.json` wil be properly added. 
-
-After successfully compiled, you will see an execution file `Game`, and simply type `./Game` in the terminal, the game should be executed!
-
-
 ## Features
 
-- Using many textures
-- Using several fonts from the internet
-- Enabling blending in OpenGL
-- Not modern OpenGL and no shader is used
+- **2D Graphics**: The game utilizes OpenGL for rendering 2D objects, environments, and animations.
+- **Player Controls**: The player can move the character in the 2D world, collecting coins along the way.
+- **Coin Collection**: Collect as many coins as possible to achieve a high score.
+- **Camera and Lighting**: Basic camera control and lighting techniques are applied to improve visual appeal.
+
+## How It Works
+
+The player can move the character using keyboard inputs. The camera follows the character, providing an immersive 3D experience. The game world contains various coins, and the objective is to collect them to increase your score.
+
+## Prerequisites
+
+- **C++ Compiler**: You need a C++ compiler that supports modern C++ standards.
+- **OpenGL**: Ensure OpenGL libraries are installed on your system.
+- **GLFW**: The game uses GLFW for creating windows and handling inputs.
+- **GLAD**: The GLAD library is used for loading OpenGL functions.
+- **GLM**: OpenGL Mathematics (GLM) is used for matrix and vector operations.
+
+## Getting Started
+
+### Clone the Repository
+```bash
+git clone https://github.com/Yoppman/Coin-Collect-Game-using-OpenGL.git
+cd Coin-Collect-Game-using-OpenGL
+```
+
+### Building the Game
+
+1. **Install Dependencies**: Ensure you have the required libraries (GLFW, GLAD, GLM) installed on your system.
+   - On Ubuntu:
+     ```bash
+     sudo apt-get install libglfw3-dev libglm-dev
+     ```
+   - On Windows:
+     Download and install the necessary dependencies.
+
+2. **Build the Game**:
+   - Use `g++` to compile the game:
+     ```bash
+     g++ -o CoinCollectGame main.cpp -lglfw -lGL -lGLU -ldl
+     ```
+   - This command compiles the `main.cpp` file and links the necessary OpenGL, GLFW, and GLU libraries.
+
+3. **Run the Game**:
+   ```bash
+   ./CoinCollectGame
+   ```
+
+### Controls
+
+- **A**: Move Left
+- **D**: Move Right
+- **ESC**: Quit the game
+
+## Project Structure
+
+```
+├── src/
+│   ├── main.cpp       # Main game loop and logic
+│   ├── shaders/       # Shader files for OpenGL rendering
+│   ├── assets/        # Assets like textures and models
+├── include/           # Header files and libraries
+│   └── glfw/          # GLFW library for handling windows and inputs
+│   └── glad/          # GLAD for loading OpenGL functions
+├── CMakeLists.txt     # CMake build configuration
+├── README.md          # Project README
+└── LICENSE            # License file
+```
+
+## Dependencies
+
+- OpenGL
+- GLFW
+- GLAD
+- GLM
+
