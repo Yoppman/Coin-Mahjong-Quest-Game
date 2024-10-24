@@ -66,16 +66,7 @@ cd Coin-Collect-Game-using-OpenGL
 ## Project Structure
 
 ```
-├── src/
-│   ├── main.cpp       # Main game loop and logic
-│   ├── shaders/       # Shader files for OpenGL rendering
-│   ├── assets/        # Assets like textures and models
-├── include/           # Header files and libraries
-│   └── glfw/          # GLFW library for handling windows and inputs
-│   └── glad/          # GLAD for loading OpenGL functions
-├── CMakeLists.txt     # CMake build configuration
-├── README.md          # Project README
-└── LICENSE            # License file
+
 ```
 
 ## Dependencies
