@@ -66,7 +66,27 @@ cd Coin-Collect-Game-using-OpenGL
 ## Project Structure
 
 ```
-
+Coin-Mahjone-Quest-Game/
+├── Demo.gif
+├── dependencies/
+│   ├── include/
+│   ├── library/
+│       ├── libfreetype.dylib
+│       ├── libglfw.3.dylib
+│       ├── libSOIL.dylib
+├── fonts/
+│   ├── Icecreamyper.otf
+│   ├── Lato-SemiboldItalic.ttf
+│   ├── Jersey M54.ttf
+├── freetype.cpp
+├── freetype.h
+├── Game
+├── Game.dSYM
+├── image/
+│   ├── MJ/
+│       ├── Multiple image files (.svg, .png)
+├── main.cpp
+├── README.md
 ```
 
 ## Dependencies
